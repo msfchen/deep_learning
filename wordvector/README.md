@@ -7,10 +7,9 @@ Word vectors capture both syntactic and semantic features of words in a dense ve
   - A shallow neural network with one hidden layer is used; input is the average of all the one hot vectors of the context words; output is a softmax layer.
   - embs = (W1.T + W2)/2.0
 
-* [Predict Word Relationships with Word Vectors](https://github.com/msfchen/deep_learning/tree/master/wordvector/analogies):
-  - predict analogies between words using pre-trained word embeddings GoogleNews-vectors-negative300
-  - Compare word embeddings by using a similarity measure (the cosine similarity).
-  - Use PCA to reduce the dimensionality of the word embeddings and plot them in two dimensions.
+* [Train Word Vectors with Skip-Gram Model](https://github.com/msfchen/deep_learning/tree/master/wordvector/skipgram):
+  - 
+  
   
 * [Naive Machine Translation and Locality Sensitive Hashing](https://github.com/msfchen/deep_learning/tree/master/wordvector/translate_lsh):
   - Naive Word Translation
@@ -20,3 +19,12 @@ Word vectors capture both syntactic and semantic features of words in a dense ve
     - given a new tweet, find the top most similar ones from a tweet corpus 
     - a tweet is converted to a vector by the sum of all the word vectors of all the words it contains.
     - LSH provides an efficient way to find approximate K-NN
+
+* [Predict Word Relationships with Word Vectors](https://github.com/msfchen/deep_learning/tree/master/wordvector/analogies):
+  - predict analogies between words using pre-trained word embeddings GoogleNews-vectors-negative300
+  - Compare word embeddings by using a similarity measure (the cosine similarity).
+  - Use PCA to reduce the dimensionality of the word embeddings and plot them in two dimensions.
+
+* [Explore Pre-Trained Word Vectors](https://github.com/msfchen/deep_learning/tree/master/wordvector/explorevec):
+  - homonyms & similarity, synonyms & antonyms, analogies, and biases 
+  - Gensim word vector visualization
