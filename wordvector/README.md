@@ -7,10 +7,11 @@ Word vectors capture both syntactic and semantic features of words in a dense ve
   - A shallow neural network with one hidden layer is used; input is the average of all the one hot vectors of the context words; output is a softmax layer.
   - embs = (W1.T + W2)/2.0
 
-* [Train Word Vectors with Skip-Gram Model](https://github.com/msfchen/deep_learning/tree/master/wordvector/skipgram):
-  - 
-  
-  
+* [Train Word Vectors with Skip-Gram Model and Negative Sampling](https://github.com/msfchen/deep_learning/tree/master/wordvector/skipgram):
+  - The setup of Skip-Gram is largely the same as CBOW, but we essentially swap input and output. The input is now the one hot vector of the center word.
+  - The outputs are 2m vectors (m is the context window size), each of which will be turned into probability by softmax. We desire these probability vectors to match the true probabilities of the actual output.
+  - Negative sampling is to improve computation efficiency by only sampling several negative examples, instead of looping over the entire vocabulary as required by the objective function.
+
 * [Naive Machine Translation and Locality Sensitive Hashing](https://github.com/msfchen/deep_learning/tree/master/wordvector/translate_lsh):
   - Naive Word Translation
     - train a transformation matrix R that projects English embeddings X to French embeddings Y, by minimizing the the Frobenius norm ||X R -Y||^2
