@@ -2,6 +2,14 @@
 
 Basic Neural Networks transform an input through one or more hidden layers. Every layer is composed of a set of neurons, each of which is fully connected to all neurons in the prior layer. The final layer, also fully-connected to prior layer, is the output layer that provides the prediction.
 
+## Multiclass Classification
+
+* [Neural Dependency Parsing](https://github.com/msfchen/deep_learning/tree/master/basicnn/dependencyparser):
+  - A dependency parser analyzes the grammatical structure of a sentence, establishing relationships between head words, and words which modify those heads.
+  - In a transition-based parser, at every step, the parser applies one of the three transitions: SHIFT, LEFT-ARC, and RIGHT-ARC.
+  - We will train a neural netwrok to predict which transition should be applied next, with the goal of maximizing performance on UAS (Unlabeled Attachemnt Score) metric.
+  - PyTorch; the feature vector consists of a list of tokens (e.g., the last word in the stack, first word in the buffer, etc.) that is represented as a list of integers, which is then converted into a single concatenated embedding. The training is to minimize corss-entropy loss. 
+
 ## Binary Classification
 
 * [Predict Sentiment of Tweets with Deep Neural Network](https://github.com/msfchen/deep_learning/tree/master/basicnn/tweetsentiment_dnn):
