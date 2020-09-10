@@ -8,7 +8,7 @@ This repository contains the deep learning projects I did in the past.
 
 ### [Word Vectors](https://github.com/msfchen/deep_learning/tree/master/wordvector)
 
-### [Convolutional Neural Netwroks](https://github.com/msfchen/deep_learning/tree/master/convolutionalnn)
+### [Convolutional Neural Networks](https://github.com/msfchen/deep_learning/tree/master/convolutionalnn)
 
 ### [Recurrent Neural Networks](https://github.com/msfchen/deep_learning/tree/master/recurrentnn)
 
