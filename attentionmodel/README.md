@@ -1,7 +1,7 @@
 # Attention Models
 
 - Given a set of vector values and a vector query, attention is a technique to compute a weighted sum of the values, dependent on the query.
-- It is sometimes referred as that the query attends or focuses on particular parts of the values.
+- It is sometimes referred to as that the query attends to or focuses on particular parts of the values.
 - Attention variants: basic dot-product attention, multiplicative attention, additive attention
 
 ## Neural Machine Translation
