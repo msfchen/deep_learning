@@ -1,0 +1,14 @@
+# Attention Models
+
+- Given a set of vector values and a vector query, attention is a technique to compute a weighted sum of the values, dependent on the query.
+- It is sometimes referred as that the query attends or focuses on particular parts of the values.
+- Attention variants: basic dot-product, multiplicative, additive
+
+## Neural Machine Translation
+
+* [Neural Machine Translation with Seq2Seq Model with Multiplicative Attention](https://github.com/msfchen/deep_learning/tree/master/attentionmodel/translation):
+  - The Spanish to English NMT system uses a Bidirectional LSTM Encoder and a Unidirectional LSTM Decoder.
+  - At each decoder timestep, the decoder hidden state is the query and all encoder hidden states are values. We get the attention scores using multiplicative attention.
+  - We concatenate the attention output with the decoder hidden state and pass it through a linear layer, a Tanh, and a Dropout to attain the combined-output vector, which is used to produce a probability distribution over target words.
+  - The loss at that timestep is the softmax cross entropy loss between the probability distribution and the actual target word.
+

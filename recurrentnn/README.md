@@ -1,6 +1,8 @@
 # Recurrect Neural Networks
 
-Recurrent neural networks are designed to model sequence, in which the hidden state of the previous step is an input to the current step. The same set of parameter values are applied repeatedly to every steps of the sequence.
+- Recurrent neural networks are designed to model sequence, in which the hidden state of the previous step is an input to the current step. The same set of parameter values are applied repeatedly to every steps of the sequence.
+- Long sequences tend to have vanishing gradient problem that give rise to LSTM and GRU units as well as other fixes, such as gradient clipping and skip connections.
+- More fancy RNN variants: Bidirectional RNNs and Multi-layer RNNs. 
 
 ## Language Model
 
