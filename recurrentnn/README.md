@@ -24,9 +24,9 @@
 ## Neural Machine Translation
 
 * [Character-based Neural Machine Translation](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/characternml):
-  - The Spanish to English NMT system uses a character-based 1-D convolutional encoder and a word-level LSTM decoder plus a character-level LSTM decoder that will kick in when the word-level decoder produces an \<UNK\> token. Character-level decoder generates the target word one character at a time, which can produce rare and out-of-vovabulary target words.
+  - The Spanish to English NMT system uses a character-based 1-D convolutional encoder and a word-level LSTM decoder plus a character-level LSTM decoder that will kick in when the word-level decoder produces an \<UNK\> token. Character-level decoder generates the target word one character at a time, which can produce rare and out-of-vocabulary target words.
   - Encoder Architecture: convert word to char idxs -> padding and embedding lookup -> MaxPool(ReLU(1-D Conv)) -> Highway Network Layer (with skip-connections) and Dropout
-  - Character-level Decoder Architecture: char idxs -> char embeddings -> unidirectional LSTM -> linear layer -> softmax -> sum of char-level corss-entropy loss
+  - Character-level Decoder Architecture: char idxs -> char embeddings -> unidirectional LSTM -> linear layer -> softmax -> sum of char-level cross-entropy loss
   - Greedy decoding algorithm (as opposed to beam search algorithm) is used to generate the sequence of characters.
 
 ## Siamese Networks
