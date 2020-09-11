@@ -1,4 +1,4 @@
-# Recurrect Neural Networks
+# Recurrent Neural Networks
 
 - Recurrent neural networks are designed to model sequence, in which the hidden state of the previous step is an input to the current step. The same set of parameter values are applied repeatedly to every steps of the sequence.
 - Long sequences tend to have vanishing gradient problem that give rise to LSTM and GRU units as well as other fixes, such as gradient clipping and skip connections.
@@ -6,7 +6,7 @@
 
 ## Language Model
 
-* [Predict Next Character with Recurrect Neural Network](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/predictnextchar):
+* [Predict Next Character with Recurrent Neural Network](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/predictnextchar):
   - convert each sentence to a list of character token_ids, ending with EOS_int.
   - a batch data generator, optionally shuffled.
   - Gated Recurrent Unit (GRU) model using Trax framework; layers: ShiftRight -> Embedding -> n_layers of GRU -> Dense -> LogSoftmax
@@ -20,6 +20,14 @@
   - a batch data generator, optionally shuffled.
   - Long Short-Term Memory (LSTM) model using Trax framework; layers: Embedding -> LSTM -> Dense -> LogSoftmax
   - Train: CrossEntropyLoss, Adam optimizer(0.01); Validation: CrossEntropyLoss, Accuracy; Test Evaluation: Accuracy (95.4%)
+
+## Neural Machine Translation
+
+* [Character-based Neural Machine Translation](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/characternml):
+  - The Spanish to English NMT system uses a character-based 1-D convolutional encoder and a word-level LSTM decoder plus a character-level LSTM decoder that will kick in when the word-level decoder produces an <UNK> token. Character-level decoder generates the target word one character at a time, which can produce rare and out-of-vovabulary target words.
+  - Encoder Architecture: convert word to char idxs -> padding and embedding lookup -> MaxPool(ReLU(1-D Conv)) -> Highway Network Layer (with skip-connections) and Dropout
+  - Character-level Decoder Architecture: char idxs -> char embeddings -> unidirectional LSTM -> linear layer -> softmax -> sum of char-level corss-entropy loss
+  - Greedy decoding algorithm (as opposed to beam search algorithm) is used to generate the sequence of characters.
 
 ## Siamese Networks
 
