@@ -25,10 +25,8 @@ Word embeddings capture both syntactic and semantic features of words in a dense
   - predict analogies between words using pre-trained word embeddings GoogleNews-vectors-negative300
   - Compare word embeddings by using a similarity measure (the cosine similarity).
   - Use PCA to reduce the dimensionality of the word embeddings and plot them in two dimensions.
-
-* [Explore Pre-Trained Word2Vec Embeddings](https://github.com/msfchen/deep_learning/tree/master/wordvector/explorevec):
   - homonyms & similarity, synonyms & antonyms, analogies, and biases 
-  - Gensim word vector visualization
+  - Gensim word vector visualization 
 
 * [Explore Pre-Trained BERT Embeddings](https://github.com/msfchen/deep_learning/tree/master/wordvector/explorebert):
   - In Word2Vec or Fasttext, each word has a fixed representation regardless of context. In BERT, same word may have different representations dependent upon the words around it.
