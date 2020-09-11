@@ -29,3 +29,9 @@ Word vectors capture both syntactic and semantic features of words in a dense ve
 * [Explore Pre-Trained Word Vectors](https://github.com/msfchen/deep_learning/tree/master/wordvector/explorevec):
   - homonyms & similarity, synonyms & antonyms, analogies, and biases 
   - Gensim word vector visualization
+
+* [Explore Pre-Trained BERT Embeddings](https://github.com/msfchen/deep_learning/tree/master/wordvector/explorebert):
+  - In Word2Vec or Fasttext, each word has a fixed representation regardless of context. In BERT, same word may have different representations dependent upon the words around it.
+  - BERT input format: begin and end tokens of a sentence; word piece tokenization; a segment ID to specify a sentence
+  - The BERT tokenizer uses WordPiece model that creates a fixed-size vocabulary of individual characters, subwords, and words. The tokenizer first checks if the whole word is in the vocabulary. If not, it tries to break the word into the largest possible subwords contained in the vocabulary, and as a last resort will decompose the word into individual characters. Therefore, there is no problem of out of vocabulary words.
+  - There are multiple ways to extract word vectors from a pre-trained BERT model, such as the last (of the 12) hidden layer, sum of the last four hidden layers, etc.
