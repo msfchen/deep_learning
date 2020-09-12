@@ -2,8 +2,8 @@
 
 - Convolutional neural networks (CNNs) make the explicit assumption that the inputs are images with 3 dimensions: width, height, depth. Therefore, the layers of a CNN have neurons arranged in 3 dimensions.
 - There are three main types of layers to build CNN architectures: Convolutional Layer, Pooling Layer, and Fully-Connected Layer (exactly as seen in regular Neural Networks). 
-- A convolutional layer contains a set of filters with learnable parameters. The height and width (receptive field) of the filters are smaller than those of the input volume. Filters are slid (convolved) across the width and height of the input and the dot products between the input and filters are computed at every spatial position. The output volume of the convolutional layer is obtained by stacking the activation maps of all filters along the depth dimension. 
-- A pooling layer will perform a downsampling operation along the spatial dimensions (width, height).
+- A [convolutional layer](https://github.com/msfchen/deep_learning/blob/master/convolutionalnn/visualization/conv_visualization.ipynb) contains a set of filters with learnable parameters. The height and width (receptive field) of the filters are smaller than those of the input volume. Filters are slid (convolved) across the width and height of the input and the dot products between the input and filters are computed at every spatial position. The output volume of the convolutional layer is obtained by stacking the activation maps of all filters along the depth dimension. 
+- A [pooling layer](https://github.com/msfchen/deep_learning/blob/master/convolutionalnn/visualization/maxpooling_visualization.ipynb) will perform a downsampling operation along the spatial dimensions (width, height).
 
 ## Image Classification
 
