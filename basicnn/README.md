@@ -1,6 +1,6 @@
 # Basic Neural Networks
 
-Basic Neural Networks transform an input through one or more hidden layers. Every layer is composed of a set of neurons, each of which is fully connected to all neurons in the prior layer. The final layer, also fully-connected to prior layer, is the output layer that provides the prediction.
+Basic Neural Networks are composed of an input layer, one or more hidden layers, and an output layer that provides prediction. Layers are fully connected, meaning every node (neuron) in one layer is connected to all the nodes in the next layer.
 
 ## Multiclass Classification
 
@@ -21,6 +21,6 @@ Basic Neural Networks transform an input through one or more hidden layers. Ever
 ## Regression
 
 * [Predict Bike Rental Count](https://github.com/msfchen/deep_learning/tree/master/basicnn/bikerental):
-  - structured data requires data exploration, feature extraction, and feature engineering. The target value is hourly rental count. 
-  - time series prediction data split: the last 21 days for test, the further prior 60 days for validation, all earlier 643 days for training, out of 2-year historical data
-  - the simplest form of NN is used: one input layer, one hidden layer, and one output neuron; MSE is used as loss;
+  - Structured data requires exploratory data analyses, feature extraction, and feature engineering. The target value is hourly rental count. 
+  - Data split (from 2-year of historical data): the last 21 days for test, the further prior 60 days for validation, all earlier 643 days for training
+  - The simplest form of NN is used: one input layer, one hidden layer, and one output neuron; MSE is used as loss;
