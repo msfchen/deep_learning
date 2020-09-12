@@ -24,8 +24,7 @@
 
 * [Combine the content of one image with the style of another image](https://github.com/msfchen/deep_learning/tree/master/convolutionalnn/styletransfer):
   - analyses of outputs of each layer of deep CNNs indicate that earlier layers capture lower level features, such as directional edges, colors, and color edges; and later layers capture more complex shapes, such as mouth, eyes, etc. 
-  - load the pre-trained VGG-19 model and freeze its parameters; .
-  - load and normalize the two images; extract features at each convolutional layer from passed-in images; initialize a target image copied from content image.
+  - load the pre-trained VGG-19 model and freeze its parameters; load and normalize the two images; extract features at each convolutional layer from passed-in images; initialize a target image copied from content image.
   - run a learning process with Adam optimizer to update the target image to minimize the total loss:
     - total_loss = content_weight * content_loss + style_weight * style_loss
     - content_loss = mean((target_features['conv4_2'] - content_features['conv4_2'])**2) where conv4_2 is the 2nd from the last Conv layer
