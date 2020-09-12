@@ -41,3 +41,8 @@ A Siamese Network, also known as Twin Network, is composed of two identical netw
   - Siamese Network using Trax framework; layers: Embedding -> LSTM -> Mean (average word vectors of each question output) -> Normalize (because cosine similarity = dot product of normalized vectors)
   - Triplet Loss Function with Hard Negative: A (anchor), P (positive), N (negative); Loss(A, P, N) = mean(Loss1 + Loss2); Loss1 = max(-cos(A, P) + mean_neg + alpha, 0); Loss2 = max(-cos(A, P) + closest_neg + alpha, 0)
   - Train: TripletLoss, Adam optimizer(0.01), lr_schedule = trax.lr.warmup_and_rsqrt_decay(400, 0.01); Validation: TripletLoss; Test Evaluation: Accuracy (69.1%)
+
+## Time Series
+
+* [Simple Time Series Prediction](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/timeseries):
+  - given a time series [n1, n2, ..., nt]; use input [n1, n2, ..., nt-1] and output [n2, ..., nt] to train a RNN so that it can predict the next item in a given test series.
