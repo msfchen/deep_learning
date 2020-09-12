@@ -29,3 +29,9 @@
     - total_loss = content_weight * content_loss + style_weight * style_loss
     - content_loss = mean((target_features['conv4_2'] - content_features['conv4_2'])**2) where conv4_2 is the 2nd from the last Conv layer
     - style_loss = sum over all layers of layer_style_loss / (d * h * w) where layer_style_loss = style_weights[layer] * mean((target_gram - style_gram)**2)
+
+## Image Compression
+
+* [Convolutional Autoencoder](https://github.com/msfchen/deep_learning/tree/master/convolutionalnn/autoencoder):
+  - A compressed representation of images can save storage space and enable more efficient sharing.
+  - The encoder portion will be made of convolutional and pooling layers and the decoder will be made of transpose convolutional layers that learn to reconstruct a compressed representation.
