@@ -12,6 +12,8 @@
   - Gated Recurrent Unit (GRU) model using Trax framework; layers: ShiftRight -> Embedding -> n_layers of GRU -> Dense -> LogSoftmax
   - Train: CrossEntropyLoss, Adam optimizer(0.0005); Validation: CrossEntropyLoss, Accuracy; Test Evaluation: Perplexity
   - generating sentence, one predicted next character at a time
+* [Novel Writing with Character-Level RNN](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/textgenbychar)
+* [TV-script Generation with Word-Level RNN](https://github.com/msfchen/deep_learning/tree/master/recurrentnn/tvscriptgeneration)
 
 ## Word Tagging
 
