@@ -17,8 +17,8 @@
     - model architecture: 4 times of Pool(ReLU(Conv)) + flatten + 2 times of Dropout(ReLU(Linear)) + Linear
     - CrossEntropyLoss; Adam(0.0007) Optimizer; test evaluation: accuracy
   - build CNN model by transfer learning from a pre-trained model:
-    - start from pre-trained VGG-19 model; change the output layer size from 1000 to 133 (the number of dog breeds in our training data)
-    - CrossEntropyLoss; Adam(0.001) Optimizer; test evaluation: accuracy
+    - load pre-trained VGG-19 model and freeze "features" layers parameters; change the output layer size from 1000 to 133 (the number of dog breeds in our training data)
+    - CrossEntropyLoss; Adam(0.001) Optimizer for "classifier" layers parameters; test evaluation: accuracy
 
 ## Image Style Transfer
 
@@ -35,3 +35,4 @@
 * [Convolutional Autoencoder](https://github.com/msfchen/deep_learning/tree/master/convolutionalnn/autoencoder):
   - A compressed representation of images can save storage space and enable more efficient sharing.
   - The encoder portion will be made of convolutional and pooling layers and the decoder will be made of transpose convolutional layers that learn to reconstruct a compressed representation.
+
