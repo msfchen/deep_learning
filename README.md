@@ -1,6 +1,6 @@
 # Deep Learning
 
-This repository contains the deep learning projects I did in the past.
+This repository contains some deep learning projects that I did in the past.
 
 ## Table Of Contents
 
