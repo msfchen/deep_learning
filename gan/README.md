@@ -35,5 +35,5 @@
   - Residual Function = the difference between a mapping applied to x and the original input x; In our case, Cycle-consistency loss is a residual function.
   - Discriminator: ReLU(Conv) -> 3 times of ReLU(BatchNorm(Conv)) -> Conv 
   - CycleGenerator: 3 times of ReLU(BatchNorm(Conv)) -> n times of (x + BatchNorm(Conv(ReLu(BatchNorm(Conv(x)))))) -> 2 times of ReLu(BatchNorm(ConvTranspose)) -> tanh(ConvTranspose)
-  - real_MSE_loss = mean((D_out - 1)**2); fake_MSE_loss = mean(D_out**2); cycle_consistency_loss = lambda_weight*mean(abs(real_im - reconstructed_im))
+  - real_MSE_loss = mean((D_out - 1)\*\*2); fake_MSE_loss = mean(D_out\*\*2); cycle_consistency_loss = lambda_weight\*mean(abs(real_im - reconstructed_im))
   - Alternating between training the discriminators and the generators, for a specified number of training iterations. 
