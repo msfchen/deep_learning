@@ -29,7 +29,7 @@
 - Given two sets (domains) of unordered and unpaired images, learn to transform images from one domain to another. This is an unsupervised learning, because these images do not come with labels. Also, there is no exact correspondences between individual images in those two sets.
 - Examples of domains: summer vs winter, Monet painting vs landscape photos, zebras vs horses, areial photos vs street map 
 
-* [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks]((https://github.com/msfchen/deep_learning/tree/master/gan/cyclegan):)
+* [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks]((https://github.com/msfchen/deep_learning/tree/master/gan/cyclegan):
   - Goal: translate images from summer scene to winter scene or vice versa
   - Main Idea: two Discriminators, one for each domain; two CycleGenerators, one for each translation; Cycle-consistency loss: x → G(x) → F(G(x)) ≈ x and  y → F(y) → G(F(y)) ≈ y
   - Residual Function = the difference between a mapping applied to x and the original input x; In our case, Cycle-consistency loss is a residual function.
