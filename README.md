@@ -13,3 +13,5 @@ This repository contains some deep learning projects that I did in the past.
 ### [Recurrent Neural Networks](https://github.com/msfchen/deep_learning/tree/master/recurrentnn)
 
 ### [Attention Models](https://github.com/msfchen/deep_learning/tree/master/attentionmodel)
+
+### [Generative Adversarial Networks](https://github.com/msfchen/deep_learning/tree/master/gan)
