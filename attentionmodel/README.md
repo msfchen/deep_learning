@@ -2,11 +2,11 @@
 
 - Given a set of vector values and a vector query, attention is a technique to compute a weighted sum of the values, dependent on the query.
 - It is sometimes referred to as that the query attends to or focuses on particular parts of the values, by giving different weights to different parts.
-- Attention variants by how attention scores are computed: basic dot-product attention, multiplicative attention, additive attention, scaled dot-product attention, content-based attention, location-based attention
-- Attention variants by the query: when the query is a part of the set of the vector values themselves, we call it Self-Attention
+- Attention variants by how attention scores are computed: basic dot-product attention, multiplicative attention, additive attention, scaled dot-product attention, 
+- Attention variants by the query: when the query is a part of the set of the vector values themselves, it is called Self-Attention or Intra-Attention
 - Attention variants by the span of the attention: Global vs Local Attention; Soft vs Hard Attention
 
-## Neural Machine Translation
+## Encoder-Decoder Attention Models
 
 * [Neural Machine Translation with Seq2Seq Model with Multiplicative Attention](https://github.com/msfchen/deep_learning/tree/master/attentionmodel/translation):
   - The Spanish to English NMT system uses a Bidirectional LSTM Encoder and a Unidirectional LSTM Decoder.
