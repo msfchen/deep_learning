@@ -1,0 +1,5 @@
+Instructions
+
+In order to process text in neural network models it is first required to encode text as numbers with ids, 
+since the tensor operations act on numbers. Finally, if the output of the network is to be words, 
+it is required to decode the predicted tokens ids back to text.

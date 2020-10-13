@@ -1,6 +1,8 @@
 # Word Vectors
 
-Word embeddings capture both syntactic and semantic features of words in a dense vector representation.
+- The advantage of neural network models is that it can learn latent feature representations from raw natural inputs, such as language tokens or image pixels.
+- Word embeddings capture both syntactic and semantic features of words in a dense vector representation.
+
 
 * [Train Word2Vec with CBOW Model](https://github.com/msfchen/deep_learning/tree/master/wordvector/cbow): 
   - In continuous bag of words (CBOW) model, we try to predict the center word given a few context words (the words around the center word).

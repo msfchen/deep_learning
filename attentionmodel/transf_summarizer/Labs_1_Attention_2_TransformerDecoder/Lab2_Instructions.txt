@@ -1,0 +1,2 @@
+Instructions
+In this notebook you'll explore the transformer decoder and how to implement it with trax.

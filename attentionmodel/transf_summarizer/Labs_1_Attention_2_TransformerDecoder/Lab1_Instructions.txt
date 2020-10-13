@@ -1,0 +1,4 @@
+Instructions
+In this notebook you'll explore the three ways of attention 
+(encoder-decoder attention, causal attention, and bi-directional self attention) 
+and how to implement the latter two with dot product attention.

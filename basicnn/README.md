@@ -1,6 +1,8 @@
 # Basic Neural Networks
 
-Basic Neural Networks are composed of an input layer, one or more hidden layers, and an output layer that provides prediction. Layers are fully connected, meaning every node (neuron) in one layer is connected to all the nodes in the next layer.
+- Basic Neural Networks are composed of an input layer, one or more hidden layers, and an output layer that provides predictions. Layers are fully connected, meaning every node (neuron) in one layer is connected to all the nodes in the next layer.
+- The input of each layer is a linear combination of the output of the previous layer. The activation function of each neuron applies non-linear transformation on the linear combination of inputs.
+- When basic neural networks are applied to problems with hand-crafted features, it does not show particular advantages over other forms of machine learning methods, such as tree-based approaches.
 
 ## Multiclass Classification
 
