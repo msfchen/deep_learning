@@ -34,5 +34,5 @@
 * [Chatbot with Reformer Model](https://github.com/msfchen/deep_learning/tree/master/attentionmodel/reformer_chatbot):
   - Training data are in the format of [Person 1:][message 1][Person 2:][message 2]...[Person 1:][message N][Person 2:][message N], where N is around 5.
   - Training examples are batched by grouping similar lengthed examples in buckets, with varying bucket sizes depending on example length.
-  - Build Reformer Language Model; LSH Attention reduces computation cost; Reversible Layers reduce momory cost.
+  - Build Reformer Language Model; LSH Attention reduces computation cost; Reversible Layers reduce memory cost.
   - At inference time, [Person 1:][message 1][Person 2:] is fed into the model and the model generates subsequent dialogues one word at a time until the given max_len of tokens have been generated.
