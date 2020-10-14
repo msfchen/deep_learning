@@ -1,6 +1,6 @@
 # Attention Models
 
-- Given a set of vectors of keys, values, and query, attention is a technique to compute a weighted sum of the values, dependent on the compatability scores between the query and keys.
+- Given a set of vectors of keys, values, and query, attention is a technique to compute a weighted sum of the values, dependent on the compatibility scores between the query and keys.
 - It is sometimes referred to as that the query attends to or focuses on particular parts of the keys or values, by giving different weights to different parts. 
 - Attention Variants:
 
